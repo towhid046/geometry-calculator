@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculator</title>
+    <!-- Daisy ui and tailwind css CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto p-6">
+      <div class="navbar bg-gray-300 rounded-md p-4">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Button</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Cards  -->
+        <div class="flex-1 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="./images/triangle.png"
+                alt="traingle"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl text-center font-bold">Traingle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex gap-4 items-center mb-4">
+                <input id="traingle-base" type="number" class="btn btn-sm w-1/3 text-lg" placeholder="b">
+                <span>cm</span>
+                <input id="traingle-height" type="number" class="btn btn-sm w-1/3 text-lg" placeholder="h">
+                <span>cm</span>
+              </div>
+
+              <div class="">
+                <button onclick="traingleCalculator()" class="btn btn-info w-full text-white text-lg">Calculate</button>
+              </div>
+
+            </div>
+          </div>
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Traiangle -->
+          <div class="card   bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aside bar -->
+        <aside class="shadow-xl rounded-lg h-96 w-80">
+          <h1 class="text-xl font-bold text-center underline">Area Calculation</h1>
+          <p id="aside" class="font-bold text-xl mt-5 text-center"></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer></footer>
+    <!-- Script js -->
+    <script src="./script/traiangle.js"></script>
+  </body>
+</html>
