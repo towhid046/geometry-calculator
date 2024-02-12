@@ -1,73 +1,41 @@
 const display = document.getElementById("aside");
 
+// function for getting the value of input fild:
 function getInputValue(inputId) {
   const value = parseFloat(document.getElementById(inputId).value);
   document.getElementById(inputId).value = "";
-    return value;
+  return value;
+}
+
+// function for displying the valu of calculation:
+function displayItem(name, value) {
+  if (value >= 0) {
+    display.innerHTML = `<p>${name} Area: ${value} cm<sup>2</sup></sup></p>`;
+  } else {
+    alert("Invalid Input!!");
+  }
 }
 
 function triangleCalculator() {
-  const base = getInputValue("traingle-base");
-  const height = getInputValue("traingle-height");
-  const area = 0.5 * base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Traingle Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Traingle", (0.5 * getInputValue("traingle-base") * getInputValue("traingle-height")));
 }
 
 function rectangleCalculator() {
-  const base = getInputValue("rectangle-base");
-  const height = getInputValue("rectangle-height");
-  const area = base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Rectangle Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Rectangle", (getInputValue("rectangle-base") * getInputValue("rectangle-height")) );
 }
 
 function parallelogramCalculator() {
-  const base = getInputValue("parallelogram-base");
-  const height = getInputValue("parallelogram-height");
-  const area = 0.5 * base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Parallelogram Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Parallelogram", (0.5 * getInputValue("parallelogram-base") * getInputValue("parallelogram-height")));
 }
 
 function rhombusCalculator() {
-  const base = getInputValue("rhombus-base");
-  const height = getInputValue("rhombus-height");
-  const area = 0.5 * base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Rhombus Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Rhombus", (0.5 * getInputValue("rhombus-base") * getInputValue("rhombus-height")));
 }
 
 function pentagonCalculator() {
-  const base = getInputValue("pentagon-base");
-  const height = getInputValue("pentagon-height");
-  const area = 0.5 * base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Pentagon Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Pentagon", (0.5 * getInputValue("pentagon-base") * getInputValue("pentagon-height")));
 }
 
 function ellipseCalculator() {
-  const base = getInputValue("ellipse-base");
-  const height = getInputValue("ellipse-height");
-  const area = (Math.PI).toFixed(3) * base * height;
-  if(area >= 0){
-    display.innerHTML = `<p>Ellipse Area: ${area} cm<sup>2</sup></sup></p>`;
-  } else{
-    alert('Invalid Input')
-  }
+  displayItem("Ellipse", Math.PI.toFixed(3) * getInputValue("ellipse-base") * getInputValue("ellipse-height"));
 }
