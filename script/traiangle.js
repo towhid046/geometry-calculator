@@ -25,7 +25,7 @@ function rectangleCalculator() {
 }
 
 function parallelogramCalculator() {
-  displayItem("Parallelogram", (0.5 * getInputValue("parallelogram-base") * getInputValue("parallelogram-height")));
+  displayItem("Parallelogram", (getInputValue("parallelogram-base") * getInputValue("parallelogram-height")));
 }
 
 function rhombusCalculator() {
