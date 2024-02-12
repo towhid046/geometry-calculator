@@ -31,7 +31,7 @@ function rectangleCalculator() {
 function parallelogramCalculator() {
   const base = getInputValue("parallelogram-base");
   const height = getInputValue("parallelogram-height");
-  const area = base * height;
+  const area = 0.5 * base * height;
   if(area >= 0){
     display.innerHTML = `<p>Parallelogram Area: ${area} cm<sup>2</sup></sup></p>`;
   } else{
